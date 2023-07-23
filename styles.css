@@ -1,16 +1,19 @@
 .wheel {
-  border: 2px solid black;
-  border-radius: 50%;
-  height: 55vw;
-  margin-left: 50px;
-  max-height: 500px;
-  max-width: 500px;
-  width: 55vw;
-  position: absolute;
   animation-name: wheel;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 55vw;
+  /* margin-left: 50px; */
+  max-height: 500px;
+  max-width: 500px;
+  width: 55vw;
+  position: absolute;
+  top: 6%;
+  left: 25%;
+  
 }
 
 .line {
@@ -44,14 +47,14 @@
 }
 
 .cabin {
+  animation: cabins 10s ease-in-out infinite; 
+  /* linear */
   background-color: red;
   border: 2px solid;
   height: 20%;
   transform-origin: 50% 0%;
   width: 20%;
   position: absolute;
-  animation: cabins 10s ease-in-out infinite; 
-  /* linear */
 }
 
 .cabin:nth-of-type(1) {
